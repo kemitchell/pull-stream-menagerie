@@ -1,0 +1,23 @@
+digraph {
+  subgraph cluster_1 {
+    label = "What do you want?"
+    Source
+    Sink
+    Through
+    Duplex
+  }
+
+  subgraph cluster_2 {
+    label = "What do you have?"
+    HaveArray[label=Array]
+    HaveNumbers[label=Numbers]
+    HaveObject[label=Object]
+    HaveClassicStream[label="Classic Stream"]
+    HaveNewStream[label="New Stream"]
+    HaveSource[label="Source"]
+    HaveSink[label="Sink"]
+    HaveThrough[label="Through"]
+  }
+
+  Source -> HaveNumbers -> count;
+}

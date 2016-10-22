@@ -1,0 +1,31 @@
+What do you want?
+
+a Source
+
+- ... of Numbers, counting up from 0
+  -> require('pull-stream').count(max)
+
+- with no data
+  -> require('pull-stream').empty()
+
+  What do you have?
+  - a single value
+    -> require('pull-stream').once(value, onAbort)
+
+  - an error to emit
+    -> require('pull-stream').error(error)
+
+  - a synchronous generator of infiniite values
+    -> require('pull-stream').infinite(generator)
+
+  - an Array
+    -> require('pull-stream').values(array)
+
+  - an Object
+    -> require('pull-stream').values(object) // streams values
+
+a Sink
+a Through
+a Duplex
+a Node Stream
+a Node Stream
